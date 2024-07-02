@@ -53,6 +53,7 @@ function App() {
       {winner !== 'Tie!'
         ? winner && <p>{`Hurrayy!! ${winner} won!!!`}</p>
         : winner && <p>{winner}</p>}
+      {!winner && !showInput && (isXturn ? <p>{players.player1}'s turn</p> : <p>{players.player2}'s turn</p>)}
       {showInput ? (
         <Input
           players={players}
@@ -67,7 +68,7 @@ function App() {
           input={input}
         />
       )}
-      {winner && <button onClick={handleRetryClick}>ReStart</button>}
+      {winner && <button onClick={handleRetryClick}>Play again</button>}
     </>
   );
 }
