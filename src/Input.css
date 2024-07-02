@@ -1,0 +1,27 @@
+.input_start_button {
+  margin: 1rem;
+}
+
+.input_text_box {
+  border-radius: 0.5rem;
+  width: 10rem;
+  height: 1.5rem;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  outline: none;
+  padding: 3px;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid #dddddd;
+  text-align: center;
+}
+
+.input_text_box:focus {
+  width: 12rem;
+  height: 2rem;
+  box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+  padding: 3px;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid rgba(81, 203, 238, 1);
+}
